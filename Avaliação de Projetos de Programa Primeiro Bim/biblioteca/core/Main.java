@@ -56,7 +56,7 @@ public class Main {
             if (multa > 0) {
                 atrasos++;
                 long diasAtraso = ChronoUnit.DAYS.between(emprestimo.getDataDevolucaoPrevista(), hoje);
-                System.out.printf("Empréstimo %d - %s: %d dias de atraso → R$ %.2f\n",
+                System.out.printf("Empréstimo %d - %s: %d dias de atraso -> R$ %.2f\n",
                         atrasos, emprestimo.getLivro().getTitulo(), diasAtraso, multa);
                 subtotal += multa;
             }
@@ -67,7 +67,7 @@ public class Main {
         double totalAPagar = leitor.calcularMultaTotal(hoje);
 
         if (atrasos > 3) {
-            System.out.println("Penalidade: mais de 3 atrasos → multa DOBRADA");
+            System.out.println("Penalidade: mais de 3 atrasos -> multa DOBRADA");
             System.out.printf("TOTAL A PAGAR: R$ %.2f\n", totalAPagar);
         } else {
             System.out.printf("TOTAL A PAGAR: R$ %.2f\n", totalAPagar);

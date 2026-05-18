@@ -1,3 +1,5 @@
+package atividade003;
+
 public class ContaCorrente extends ContaBancaria {
     private static final double LIMITE_CHEQUE_ESPECIAL = 1000;
 

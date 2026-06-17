@@ -38,13 +38,13 @@ Foram criadas duas hierarquias de herança:
 - `ItemAcervo` é declarada como `abstract` e possui dois métodos abstratos: `exibirDetalhes()` e `getTipo()`, implementados de forma diferente em cada subclasse.
 - `Usuario` também é declarada como `abstract` com os métodos abstratos `getTipo()` e `getPrazoDevolucaoDias()`, onde `Aluno` retorna 7 dias e `Professor` retorna 14 dias.
 
-**Arquivos:** `ItemAcervo.java` (linhas 8-9), `Usuario.java` (linhas 4, 23-27)
+**Arquivos:** `ItemAcervo.java`, `Usuario.java`
 
 ### 3. Interface
 
 A interface `Emprestavel` define o contrato com três métodos: `emprestar()`, `devolver()` e `estaDisponivel()`. A classe `ItemAcervo` implementa essa interface, e todos os itens do acervo herdam essa implementação.
 
-**Arquivos:** `Emprestavel.java`, `ItemAcervo.java` (linha 8: `implements Emprestavel`)
+**Arquivos:** `Emprestavel.java`, `ItemAcervo.java`, `implements Emprestavel`
 
 ### 4. Polimorfismo
 
@@ -53,7 +53,7 @@ O polimorfismo é demonstrado de duas formas:
 - **Variáveis polimórficas:** No `BibliotecaManager`, o acervo é armazenado em `List<ItemAcervo>` e os usuários em `List<Usuario>`. Objetos de qualquer subclasse são adicionados nessas listas.
 - **Sobrescrita de métodos:** Ao percorrer a lista e chamar `item.exibirDetalhes()`, cada objeto executa sua própria versão do método (Livro mostra autor/páginas, Revista mostra edição/editora, DVD mostra diretor/duração). O mesmo ocorre com `getPrazoDevolucaoDias()` em Aluno (7 dias) e Professor (14 dias).
 
-**Arquivos:** `BibliotecaManager.java` (linhas 22-24 para as listas, linha 100 para chamada polimórfica)
+**Arquivos:** `BibliotecaManager.java`
 
 ### 5. Tratamento de Exceções
 
@@ -68,7 +68,7 @@ Foram criadas quatro exceções personalizadas que herdam de `Exception`:
 
 Todas as operações de empréstimo, devolução e cadastro utilizam blocos `try/catch` para capturar essas exceções, exibir mensagens claras ao usuário e retornar ao menu sem encerrar o programa.
 
-**Arquivos:** pasta `exceptions/`, `BibliotecaManager.java` (linhas 113-117, 127-129)
+**Arquivos:** pasta `exceptions/`, `BibliotecaManager.java`
 
 ---
 

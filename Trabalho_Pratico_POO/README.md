@@ -1,6 +1,6 @@
 # Sistema de Gerenciamento de Biblioteca
 
-**Disciplina:** Programação Orientada a Objetos  
+**Disciplina:** Projetos de Programas
 **Integrante:** Bernardo Holanda  
 **Linguagem:** Java
 
